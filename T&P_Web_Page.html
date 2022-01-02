@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>T&P Cell</title>
+    <link rel="icon" href="http://www.tezu.ernet.in/tp/images/tu_logo.png">
+
+    <style>
+        body {
+            max-width: 100%;
+        }
+
+        .h {
+            margin: 200px;
+        }
+
+        .container {
+            list-style-type: none;
+            margin-bottom: 0;
+            padding: 30px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 10px 10px 5px 5px rgb(247, 244, 244);
+        }
+
+        .container a {
+
+            color: black;
+            text-align: center;
+            font-family: montserrat;
+            font-weight: regular;
+            font-size: 20px;
+            min-width: 50px;
+            margin-bottom: 100px;
+            margin-top: 0px;
+            padding: 14px 16px;
+            text-decoration: none;
+            float: right;
+        }
+
+        .dropdown-content a {
+            margin-bottom: 10px;
+        }
+
+        .dropdown {
+            float: right;
+            font-size: 16px;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-family: montserrat;
+            font-weight: regular;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+
+        .container a:hover {
+            color: rgb(25, 165, 230);
+
+        }
+
+        .dropdown:hover .dropbtn {
+            color: rgb(25, 165, 230);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 16px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .scrollmenu {
+            background-color: white;
+            overflow: auto;
+            white-space: nowrap;
+            
+        }
+
+        .scrollmenu a {
+            display: inline-table;
+            color: white;
+            font-family: montserrat;
+            font-weight: regular;
+            font-size: 20px;
+            border: white solid 5px;
+            border-style: 4px;
+            background-color: #0066ff;
+            text-align: center;
+            padding: 80px;
+            text-decoration: none;
+        }
+
+        .scrollmenu a:hover {
+            background-color: rgb(10, 240, 190);
+
+        }
+
+        .bottom {
+            background-color: #0066ff;
+            overflow: hidden;
+            padding: 60 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .bottom a:hover {
+            color: rgb(10, 240, 190);
+
+        }
+
+        .bottom k {
+
+
+            float: right;
+
+        }
+
+        .bottom k a {
+            color: white;
+            font-family: montserrat;
+            font-weight: regular;
+            font-size: 20px;
+            float: right;
+            margin-left:14px;
+            width: 25%;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+
+        .bottom h {
+
+            float: left;
+
+        }
+
+        .bottom h a {
+            color: white;
+            font-family: montserrat;
+            font-weight: regular;
+            font-size: 20px;
+            float: left;
+            margin-left: 50px;
+            margin-right: 10px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!--   ======== header ======== -->
+    <div class="container">
+        <img src="http://www.tezu.ernet.in/tp/images/tu_logo.png" alt="Tezu Logo" style="height: 100px;width: 100px;
+        margin-left: 50px;margin-right: 25px;float: left;">
+
+
+        <div class="dropdown">
+            <button class="dropbtn">More
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#homes">homes</a>
+                <a href="#stories">stories</a>
+                <a href="#visitor">visitors</a>
+                <a href="#people">people</a>
+                <a href="#Admin Console">Admin Console</a>
+            </div>
+        </div>
+
+        <a href="#About Us">About Us</a>
+        <a href="#News & Notifications">News & Notifications</a>
+        <a href="#Latest Job Posting">Latest Job Posting</a>
+        <a href="#Placements">Placements</a>
+        <a href="#Events">Events Us</a>
+        <p style="font-family:montserrat; font-weight:medium; font-size:20pt;text-align:left;">
+            Training and Placement Cell<br>
+            <span style="font-family:montserrat; font-weight:medium; font-size:10pt;text-align:left">
+                School of Engineering, Tezpur university</span>
+
+        </p>
+
+
+    </div>
+
+
+
+    <div class="h">
+
+        <p style="font-family:montserrat; font-weight:medium; font-size:50pt;text-align:center;
+        border: black solid;padding:100px;margin-bottom: 150px;">
+            Training and Placement Cell<br>
+            <span style="font-family:montserrat; font-weight:medium; font-size:30pt;text-align:left">
+                School of Engineering, Tezpur university</span>
+
+        </p>
+
+
+        <p style="font-family:montserrat; font-weight:medium; font-size:40pt;text-align:center;">
+            Upcoming Events
+        </p>
+
+
+        <!--   scroller -->
+
+        <div class="scrollmenu">
+            <a href="#Event Name">1<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">2<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">3<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">4<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">5<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">6<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">7<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">8<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">9<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">10<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">11<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">12<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">13<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">14<br>Event Name<br>11/11/21</a>
+            <a href="#Event Name">15<br>Event Name<br>11/11/21</a>
+        </div>
+
+        <p style="font-family:montserrat; font-weight:medium;margin-top: 100px; font-size:40pt;text-align:center;">
+            Activities
+        </p>
+
+        <!-- 1st text-->
+
+        <img src="https://thumbs.dreamstime.com/b/internship-elegant-cyan-blue-diamond-button-internship-isolated
+    -elegant-cyan-blue-diamond-button-abstract-illustration-102227477.jpg" alt="gear"
+            style="height: 150px;width:150px">
+
+
+        <p style="font-family:Montserrat; font-weight:bold;text-align: left; font-size:24pt;">
+            Summer/Winter Internship Programme<br>
+        </p>
+
+
+        <img src="https://qph.fs.quoracdn.net/main-qimg-31d4553c2ab075db473ba9250e653d8e" alt="test"
+            style="float: right;margin-right:100px;margin-top:50px;height: 200px;width:300px">
+
+
+        <p style="font-family:Montserrat; font-weight:regular;text-align: left;margin-left: 0px ;
+            color:#636363; margin-right: 600px; font-size:17pt;">
+
+            The Summer/Winter Internship programme conducted after the first year of studentship is intended to provide
+            the students a first-hand experience of the corporate world. While working closely with company executives,
+            they develop a long-term perspective of their career during such programmes. The companies too view the
+            Summer/Winter Internship programme as a means to engage students in productive short-term assignments as
+            well as evaluate them for the purpose of giving them pre-placement offers.
+
+        </p>
+
+        <!-- 2st text-->
+
+
+        <img src="https://www.seekpng.com/png/detail/319-3192624_logo-for-placement-agency.png" alt="gear.2"
+            style="height:100px; margin-left:700px;margin-top:50px;width:100px" ;>
+
+
+        <p style="font-family:Montserrat; font-weight:bold; font-size:24pt;margin-left: 700px;">
+
+            Pre-placement Grooming Programme<br>
+
+        </p>
+
+
+        <img src="https://5.imimg.com/data5/LE/PP/MY-3104603/job-placement-services-500x500.jpg" alt="test"
+            style="float: left;margin-left: 100px; margin-top:0px;height: 300px;width:300px">
+
+
+        <p style="font-family:Montserrat; font-weight:regular; font-size:17pt; margin-left:700px ;color:#636363; 
+            margin-bottom:100px;margin-right: 0px;">
+            The Training & Placement Cell organizes a series of Pre-placement Grooming Sessions for pre-final semester
+            students every year
+            with an objective to improve the overall personality of the students. The modules for such programmes are
+            prepared taking into
+            account the requirement of the recruiters as well as the need of the time. While doing so, efforts are
+            directed towards the
+            areas where the students are found to be weak.
+        </p>
+
+        <!-- 3rd text-->
+
+
+        <img src="https://seeklogo.com/images/I/industry-logo-E411B752F4-seeklogo.com.png" alt="gear"
+            style="height: 100px;margin-top:50px;margin-left: 0;width:100px">
+
+
+        <p style="font-family:Montserrat; font-weight:bold;text-align: left; font-size:24pt;">
+            Industry-Institute Interaction<br>
+        </p>
+
+
+        <img src="https://www.mlrinstitutions.ac.in/files/iii.png" alt="test"
+            style="float: right;margin-right:100px;height: 200px;width:300px">
+
+
+        <p
+            style="font-family:Montserrat; font-weight:regular;margin-left: 0px ; color:#636363;margin-right: 600px;
+             font-size:17pt;">
+            Better interaction between Technical institutions and industry is the need of the hour. This will
+            have great bearing on the Engineering Curriculum, exposure of industrial atmosphere to engineering
+            students and subsequent placement of young graduating engineers in industries across the country.
+            With the advent of globalization and opening up of Indian economy to outside world, competition
+            among industries have become stiff. To solve their engineering problems they look up now to engg.
+            Institutions.
+
+        </p>
+
+        <p style="font-family:montserrat; font-weight:medium;font-size:40pt;text-align:center;margin-top: 100px;">
+            Why Recruit ?
+        </p>
+
+
+        <!-- 4th text-->
+
+
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png" alt="gear"
+            style="height: 100px;margin-top:30px;width:100px">
+
+
+        <p style="font-family:Montserrat; font-weight:bold;text-align: left; font-size:24pt;">
+            The Facilitating Interface<br>
+        </p>
+
+
+        <img src="http://www.tezu.ernet.in/tp/images/1.JPG" alt="test"
+            style="float: right;margin-right:100px;height: 200px;width:300px">
+
+
+        <p
+            style="font-family:Montserrat; font-weight:regular;margin-left: 0px ;color:#636363; margin-right: 600px;
+             font-size:17pt;">
+
+            One of the unique features of the University is its commitment not only to produce quality manpower,
+            but also to guide and shape the career of the students. In order to meet this objective, the University
+            has a Training & Placement Cell which acts as the interface between the recruiting organizations and the
+            University students. It facilitates recruitment events on-campus as well as off-campus as required.
+            It also organizes various pre-placement training programmes to enhance the employability of the targeted
+            students. Currently, the Cell is headed by the Professor in Charge (Non Engineering).
+
+
+        </p>
+
+        <!-- 5th-->
+
+
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png" alt="gear.2"
+            style="height:100px; margin-left:700px;margin-top:50px;width:100px" ;>
+
+
+        <p style="font-family:Montserrat; font-weight:bold; font-size:24pt;margin-left: 700px;">
+
+            Rigorous Admissions Tests<br>
+
+        </p>
+
+        <img src="http://www.tezu.ernet.in/tp/images/2.jpg" alt="test"
+            style="float: left;margin-left: 100px; margin-top:50px;height: 200px;width:300px">
+
+
+        <p
+            style="font-family:Montserrat; font-weight:regular; font-size:17pt;color:#636363; margin-left:700px ;
+             margin-right: 0px;">
+
+            The students of the University are selected through a two-stage filtration system,<br>
+            (a) Nation-wide written test and<br>
+            (b) Group discussion and personal interview.<br>
+
+            Admission tests apply a common standard to everyone. This helps colleges evaluate and compare the
+            preparation of students who go to different high schools. All schools do not offer the same academic
+            programs, learning environments or even expectations. Colleges look at your test scores, along with
+            your high school grades and courses, to see how well prepared you are for college-level work.
+        </p>
+
+        <!-- 6th text-->
+
+
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png" alt="gear"
+            style="height: 100px;margin-top:50px;width:100px">
+
+
+        <p style="font-family:Montserrat; font-weight:bold;text-align: left; font-size:24pt;">
+            Close-Knit Monitoring<br>
+        </p>
+
+
+        <img src="http://www.tezu.ernet.in/tp/images/3.jpg" alt="test"
+            style="float: right;margin-right:100px;height: 200px;width:300px">
+
+
+        <p
+            style="font-family:Montserrat; font-weight:regular;margin-left: 0px ;color:#636363; margin-right: 600px;
+             font-size:17pt;">
+
+            While the residential nature of the University gives ample opportunity to the teachers and students
+            to spend more time in the pursuit of teaching-learning, the non-affiliating quality facilitates more
+            concentration on focused training and research. The teacher : student ratio in this University is
+            one of the lowest in the country and therefore it provides for more attention to the student and a
+            perfect atmosphere for one-to-one discussion.
+
+        </p>
+
+        <!-- 7th-->
+
+
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png" alt="gear.2"
+            style="height:100px; margin-left:700px;margin-top:50px;width:100px" ;>
+
+
+        <p style="font-family:Montserrat; font-weight:bold; font-size:24pt;margin-left: 700px;">
+
+            Culturals and Extra Curriculars<br>
+
+        </p>
+
+        <img src="http://www.tezu.ernet.in/tp/images/4.jpg" alt="test"
+            style="float: left;margin-left: 100px; margin-top:0px;height: 200px;width:300px">
+
+
+        <p
+            style="font-family:Montserrat; font-weight:regular; color:#636363;font-size:17pt; margin-left:700px ;
+             margin-right: 0px;">
+
+            Life at Tezpur University is meant to pique your curiosity and stimulate your intellect at every turn.
+            So in spite of the tight academic schedule followed by the students, they eagerly pursue various
+            extra-curricular activities, ranging from inter hostel sports to national and international level
+            competitions.
+            This also includes the mess and hostel infrastructure facilities being managed by the students, clubs and
+            societies
+            to promote technical, managerial and social well-being of the students.
+        </p>
+
+        <!-- 8th text-->
+
+
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png" alt="gear"
+            style="height: 100px;margin-top:50px;width:100px">
+
+
+        <p style="font-family:Montserrat; font-weight:bold;text-align: left; font-size:24pt;">
+            A Proven track Record<br>
+        </p>
+
+        <img src="http://www.tezu.ernet.in/tp/images/7.jpg" alt="test"
+            style="float: right;margin-right:100px;height: 200px;margin-top:50px;width:300px">
+
+
+
+        <p
+            style="font-family:Montserrat; font-weight:regular;color:#636363;margin-left: 0px ; margin-right: 600px;
+             font-size:17pt;">
+
+            A number of past students of the University are now occupying highly responsible positions in various
+            reputed and prestigious organizations including MNCs, PSUs, banks, Govt. organizations, institutions
+            of learning etc. in various places of the globe. The University maintains a vibrant industry-academia
+            relationship and the suggestions of the experts are taken as tools for its continuous improvement.
+            As per feedback received from the employers, the University alumni are remarkably high in professionalism,
+            intelligence and job-interestedness and therefore they are worthy of their fast track records.
+
+        </p>
+
+        <!-- 9th-->
+
+
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png" alt="gear.2"
+            style="height:100px; margin-left:700px;margin-top:50px;width:100px" ;>
+
+
+        <p style="font-family:Montserrat; font-weight:bold; font-size:24pt;margin-left: 700px;">
+
+            Highly Conducive Campus<br>
+
+        </p>
+
+        <img src="http://www.tezu.ernet.in/tp/images/5.jpg" alt="test"
+            style="float: left;margin-left: 100px; margin-top:0px;height: 200px;width:300px">
+
+
+        <p
+            style="font-family:Montserrat; color:#636363;font-weight:regular; font-size:17pt; margin-left:700px ;
+             margin-right: 0px;">
+
+            The serene nature of the campus and its existence away from the city make the environment more
+            pleasant and conducive for pursuit of education. The campus is self-contained with all facilities
+            of modern township. As a result, the morale of the students remains high and confident, oblivious to
+            the politics of student life.
+        </p>
+
+
+        <!-- 10th text-->
+
+
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png" alt="gear"
+            style="height: 100px;margin-top:100px;width:100px">
+
+
+        <p style="font-family:Montserrat; font-weight:bold;text-align: left; font-size:24pt;">
+            Assuring the facilities<br>
+        </p>
+
+        <img src="http://www.tezu.ernet.in/tp/images/6.jpg" alt="test"
+            style="float: right;margin-right:100px;height: 200px;width:300px">
+
+
+        <p
+            style="font-family:Montserrat;color:#636363; font-weight:regular;margin-left: 0px ;
+             margin-right: 600px; font-size:17pt;">
+
+            Besides our warm welcome, Campus recruiters are given the following aids :<br>
+            a)Large classrooms and Halls for Pre-Placement talks<br>
+            b)Fully equipped computer labs for online tests.<br>
+            c)Air Conditioned rooms for Group Discussions.<br>
+            d)Video-Conferencing and Interviews.<br>
+            e)High Speed internet connection Facility.<br>
+            f)Guest house and lodging facilities.<br>
+            g)Best of Hospitality amid lush green Campus.<br>
+
+        </p>
+    </div>
+
+    <!-- bottom navbar -->
+
+    <div class="bottom">
+        <p style="font-family:montserrat; font-weight:medium;color:white;
+        font-size:20pt;text-align:left;">
+            Training and Placement Cell<br>
+            <span style="font-family:montserrat; font-weight:medium;color:white; font-size:10pt;text-align:left">
+                School of Engineering, Tezpur university</span>
+
+        </p>
+        <h>
+            <a href="#Address">Address..SOE TU..</a><br>
+            <a href="#email">email@gmail.com</a><br>
+            <a href="#linked in">linked in</a><br>
+        </h>
+
+        <k>
+            <a href="#visitor">visitors</a>
+            <a href="#About Us">About Us</a>
+            <a href="#Events">Events</a>
+            <a href="#stories">stories</a>
+            <a href="#homes">homes</a>
+            <a href="#Placements">Placements</a>
+            <a href="#Admin Console">Admin Console</a>
+            <a href="#people">people</a>
+            <a href="#Latest Job Posting">Latest Job Posting</a>
+            <a href="#News & Notifications">News & Notifications</a>
+        </k>
+    </div>
+
+</body>
+
+</html>
